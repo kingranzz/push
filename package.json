@@ -1,0 +1,21 @@
+{
+  "name": "pushkontak",
+  "version": "1.0.2",
+  "description": "Catatan jangan menggunakan nomor whatsapp pribadi untuk Push Kontak/Broadcast(Spam), Jika terdapat kendala di akun anda bukan tanggung jawab kami. DWYOR Do With Your Own Risk",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "code": "rm -rf ./data/auth && rm -rf ./data/store.json && echo '[]' > ./data/users.json && echo '[]' > ./data/histories.json && node index.js --number",
+    "qr": "rm -rf ./data/auth && rm -rf ./data/store.json && echo '[]' > ./data/users.json && echo '[]' > ./data/histories.json && node index.js",
+    "start": "node index.js --number"
+  },
+  "keywords": [],
+  "author": "Bayu Mahadika",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.5",
+    "jimp": "^0.16.13",
+    "link-preview-js": "^3.0.5",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

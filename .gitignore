@@ -1,0 +1,4 @@
+data/auth
+data/store.json
+node_modules
+test.js
